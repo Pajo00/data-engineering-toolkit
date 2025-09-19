@@ -1,17 +1,71 @@
-# Data Engineering Toolkit 
+# Data Engineering Toolkit  
 
-This is a practice repo to learn Git/GitHub with a simple toolkit:
-- Cleaning script
-- Transformation script
-- Loading script
+A lightweight practice repository designed to demonstrate **data engineering fundamentals** using a simple **ETL pipeline**:  
 
-## Documentation
-Short descriptions live in each file as comments/docstrings.
+- **cleaning.py** → Handles raw data preprocessing (missing values, duplicates, formatting).  
+- **transform.py** → Applies business logic, enriches data, and prepares it for loading.  
+- **load.py** → Persists the processed data into storage formats (CSV/Parquet) or databases.  
 
-## Code Examples
-Run the scripts in `scripts/` (or copy snippets from the files).
+This project also serves as a sandbox for learning **Git & GitHub workflows**, including branching, commits, and pull requests.  
 
-## Contribution Guide
-- Branch from `develop` using `feature/<name>`
-- Commit small changes often
-- Open a PR into `develop`
+---
+
+## 📌 Project Structure
+data-engineering-toolkit/
+│
+├── cleaning.py # Cleans raw data
+├── transform.py # Transforms cleaned data
+├── load.py # Loads transformed data into storage
+├── requirements.txt # Python dependencies
+│
+└── README.md # Project documentation
+
+yaml
+Copy code
+
+---
+
+## 🚀 Getting Started  
+
+### Prerequisites  
+- Python 3.8+  
+- Install dependencies from `requirements.txt`:  
+
+```bash
+pip install -r requirements.txt
+Running the Scripts
+Run the scripts sequentially to simulate the ETL pipeline:
+
+bash
+Copy code
+python cleaning.py
+python transform.py
+python load.py
+Outputs will be saved in the project folder as CSV and Parquet files.
+```
+
+# 📖 Documentation
+Each script includes inline comments explaining:
+
+The purpose of the script
+
+Key steps performed
+
+Example outputs
+
+# 🤝 Contribution Guide
+We follow a feature-branch workflow:
+
+Create a branch from develop:
+
+bash
+Copy code
+git checkout develop
+git pull
+git checkout -b feature/<your-feature-name>
+Commit small, meaningful changes:
+
+bash
+Copy code
+git commit -m "Add transformation for age grouping"
+Push and open a Pull Request into develop.
