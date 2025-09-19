@@ -10,21 +10,6 @@ This project also serves as a sandbox for learning **Git & GitHub workflows**, i
 
 ---
 
-## 📌 Project Structure
-data-engineering-toolkit/
-│
-├── cleaning.py # Cleans raw data
-├── transform.py # Transforms cleaned data
-├── load.py # Loads transformed data into storage
-├── requirements.txt # Python dependencies
-│
-└── README.md # Project documentation
-
-yaml
-Copy code
-
----
-
 ## 🚀 Getting Started  
 
 ### Prerequisites  
