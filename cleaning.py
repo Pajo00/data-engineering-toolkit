@@ -22,7 +22,7 @@ df["Age"].fillna(df["Age"].mean(), inplace=True)
 df["Email"].fillna("no_email_provided@example.com", inplace=True)
 
 # - Standardize text columns (lowercase emails and names, strip spaces)
-df["Name"] = df["Name"].str.strip().str.title()   # capitalize names properly
+df["Name"] = df["Name"].str.strip().str.title()   
 df["Email"] = df["Email"].str.lower().str.strip()
 
 # - Convert Salary to numeric
